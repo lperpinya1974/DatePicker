@@ -16,11 +16,6 @@
         android:layout_weight=".5"
         android:hint="@string/from_date" />
 
-    <EditText
-        android:id="@+id/etxt_todate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight=".5"
-        android:hint="@string/to_date" />
+
 
 </LinearLayout>

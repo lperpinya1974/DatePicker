@@ -41,7 +41,11 @@ package com.exemple.profedam.datepicker;
             /* Creamos el DatePickerDialog a partir de la fechaActual */
             Calendar newCalendar = Calendar.getInstance();
             fromDatePickerDialog = new DatePickerDialog(this, this, newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
-
+            /* El constructor del DatePickerDialog accepta per paràmetres
+               1. El context (o l'Activity on és llençat)
+               2. L'objecte que el "vigila" i que implementa la interfície onDateSetListener
+               3. Any, mes i dia del calendar que es mostren per defecte
+             */
 
         }
 
@@ -58,7 +62,7 @@ package com.exemple.profedam.datepicker;
         @Override
         public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
 
-            
+
             Calendar newDate = Calendar.getInstance();
             newDate.set(year, month, dayOfMonth);
             SimpleDateFormat dateFormatter = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
