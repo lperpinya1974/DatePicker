@@ -33,8 +33,9 @@ package com.exemple.profedam.datepicker;
             setContentView(R.layout.activity_main);
             /* Inicializamos el EditText y pedimos el focus */
             fromDateEtxt = (EditText) findViewById(R.id.etxt_fromdate);
-            fromDateEtxt.setInputType(InputType.TYPE_NULL);
-            fromDateEtxt.requestFocus();
+           /* fromDateEtxt.setInputType(InputType.TYPE_NULL);
+            fromDateEtxt.requestFocus(); */
+            fromDateEtxt.setFocusable(false);
 
             /* Ponemos el Listener al EditText */
             fromDateEtxt.setOnClickListener(this);
